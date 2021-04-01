@@ -11,6 +11,8 @@ pipeline {
                 sh 'npm --version'
                 sh 'ls -al'
                 sh 'pwd'
+                sh 'npm install'
+                sh 'npm run serve'
             }
         }
     }
