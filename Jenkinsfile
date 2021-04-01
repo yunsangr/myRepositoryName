@@ -26,7 +26,7 @@ pipeline {
         stage('Run Server') {
             steps {
                 echo "Running Server..."
-                sh "nohup npm run server &"
+                sh "nohup npm run serve &"
             }
         }
     }
