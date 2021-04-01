@@ -19,12 +19,12 @@ pipeline {
             }
         }
         stage('Test') {
-            stage {
+            steps {
                 echo "Let's implement test stage soon..."
             }
         }
         stage('Run Server') {
-            stage {
+            steps {
                 echo "Running Server..."
                 sh "nohup npm run server &"
             }
