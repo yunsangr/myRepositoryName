@@ -11,13 +11,22 @@ pipeline {
                 sh 'npm --version'
                 sh 'ls -al'
                 sh 'pwd'
-                sh 'npm install'
-                sh 'npm run serve'
             }
         }
         stage('Install') {
             steps {
                 sh 'npm install'
+            }
+        }
+        stage('Test') {
+            stage {
+                echo "Let's implement test stage soon..."
+            }
+        }
+        stage('Run Server') {
+            stage {
+                echo "Running Server..."
+                sh "nohup npm run server &"
             }
         }
     }
