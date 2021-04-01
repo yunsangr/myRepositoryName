@@ -9,6 +9,8 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'npm --version'
+                sh 'ls -al'
+                sh 'pwd'
             }
         }
     }
