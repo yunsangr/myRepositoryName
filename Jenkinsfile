@@ -11,6 +11,7 @@ pipeline {
         stage('Install') {
             steps {
                 sh 'npm install'
+                echo "Hello Jenkins from Branch A"
             }
         }
         stage('Test') {
