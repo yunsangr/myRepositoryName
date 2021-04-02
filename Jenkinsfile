@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                echo "Just Added GITHUB HOOK TRIGGER -JACOB FOREVER-"
                 sh 'npm --version'
                 sh 'ls -al'
                 sh 'pwd'
