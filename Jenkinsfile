@@ -1,10 +1,5 @@
 pipeline {
-    agent {
-        docker {
-            image 'node:6-alpine'
-            args '-p 3000:3000'
-        }
-    }
+    agent any
     stages {
         stage('Build') {
             steps {
@@ -25,8 +20,7 @@ pipeline {
         }
         stage('Run Server') {
             steps {
-                echo "Running Server..."
-                sh "nohup npm run serve &"
+                echo "Running Server... Not going to run actually..."
             }
         }
     }
