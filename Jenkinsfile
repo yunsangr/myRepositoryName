@@ -6,7 +6,7 @@ pipeline {
                 sh 'npm --version'
                 sh 'ls -al'
                 sh 'pwd'
-                echo 'Trigger from develop JACOB FOREVER 3102!!!'
+                echo 'JACOB FOREVERJACOB FOREVERJACOB FOREVERJACOB FOREVER'
             }
         }
         stage('Install') {
